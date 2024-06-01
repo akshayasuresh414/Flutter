@@ -9,14 +9,13 @@ class MapPage extends StatefulWidget {
 }
 
 class _MapPageState extends State<MapPage> {
-  static const LatLng _chennai = LatLng(13.0827, 80.2707);
+  static const LatLng _pGooglePlex = LatLng(37.4223, -122.0848);
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       body: GoogleMap(
-        onMapCreated: _onMapCreated,
-        initialCameraPosition: CameraPosition(target: _chennai, zoom: 10.0),
+        initialCameraPosition: CameraPosition(target: _pGooglePlex, zoom: 2),
       ),
     );
   }
